@@ -1,0 +1,122 @@
+/* Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Splash Page (Home) */
+#splash {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+}
+
+/* Stationary Center Object */
+#center-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10; /* on top of the balls */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #000;
+}
+#center-object h1 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 36px;
+}
+#center-object nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+/* Bouncing Ball Style */
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  z-index: 5;
+}
+
+/* Directory Page */
+#directory {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.back-button {
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #ccc;
+}
+.project-section {
+  margin-bottom: 40px;
+}
+.project-section h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+/* Gallery Placeholder */
+#gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-item {
+  width: calc(33.33% - 10px);
+  height: 200px;
+  background: #222;
+}
+
+/* Fullscreen Video Example */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+.video-controls button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}

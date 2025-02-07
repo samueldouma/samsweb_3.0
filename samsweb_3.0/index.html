@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>samsweb_3.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Splash Page with Interactive Balls -->
+  <div id="splash">
+    <!-- Stationary center object with title and navigation links -->
+    <div id="center-object">
+      <h1>SAMSWEB 3.0</h1>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    
+    <!-- Draggable & bouncing balls -->
+    <div class="ball" data-target="audio" style="top: 50px; left: 50px;">Audio</div>
+    <div class="ball" data-target="video" style="top: 150px; left: 200px;">Video</div>
+    <div class="ball" data-target="disco" style="top: 300px; left: 100px;">Disco</div>
+    <div class="ball" data-target="dico" style="top: 400px; left: 300px;">Dico</div>
+    <div class="ball" data-target="cogito" style="top: 250px; left: 400px;">Cogito</div>
+    <div class="ball" data-target="lego" style="top: 350px; left: 500px;">Lego</div>
+    <div class="ball" data-target="scribo" style="top: 200px; left: 600px;">Scribo</div>
+  </div>
+  
+  <!-- Directory Page -->
+  <div id="directory">
+    <div class="back-button">← Back to Home</div>
+    <div id="content">
+      <!-- Dynamic category content loads here -->
+    </div>
+    <div id="gallery">
+      <!-- Gallery placeholder for embedded media (audio, video, gifs, etc.) -->
+    </div>
+  </div>
+  
+  <!-- Example Fullscreen Video Page (for reference) -->
+  <div id="videoPage" style="display:none;">
+    <div class="video-container">
+      <video id="fullscreenVideo" autoplay muted loop>
+        <source src="path-to-your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-controls">
+        <button id="playPauseBtn">Pause</button>
+        <button id="muteUnmuteBtn">Unmute</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
